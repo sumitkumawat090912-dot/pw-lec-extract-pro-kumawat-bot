@@ -2,18 +2,7 @@ FROM python:3.12-alpine3.20
 
 WORKDIR /app
 
-RUN apk add --no-cache 
-gcc 
-g++ 
-make 
-cmake 
-musl-dev 
-libffi-dev 
-linux-headers 
-ffmpeg 
-aria2 
-wget 
-unzip
+RUN apk add --no-cache gcc g++ make cmake musl-dev libffi-dev linux-headers ffmpeg aria2 wget unzip
 
 # Install Bento4
 
